@@ -1,5 +1,5 @@
 # CienciaDados
-Introudução a Ciencia dos Dados para Cursos de Ensino Médio
+Introdução a Ciencia dos Dados para Cursos de Ensino Médio
 
 Vamos trabalhar com:
 1) básico de Python, Pandas, Numpy t Matplotlib
