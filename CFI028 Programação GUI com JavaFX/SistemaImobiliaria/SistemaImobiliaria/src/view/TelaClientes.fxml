@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controller.TelaClientesController">
+   <children>
+           <Label layoutX="104.0" layoutY="37.0" text="Tela de Clientes" textFill="#e8b309">
+         <font>
+            <Font name="System Bold Italic" size="49.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="btnFechar" layoutX="109.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#btnFecharClicked" text="Fechar" />
+   </children>
+</AnchorPane>

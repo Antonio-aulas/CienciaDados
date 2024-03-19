@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="containerPrincipal" prefHeight="742.0" prefWidth="755.0" stylesheets="@folha.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cfi028_pizzariacompleta_2024.TelaInicialController">
+   <children>
+      <ComboBox fx:id="cbSabores" layoutX="174.0" layoutY="72.0" prefHeight="25.0" prefWidth="371.0" promptText="Sabores de pizza" styleClass="label" stylesheets="@folha.css" />
+      <CheckBox fx:id="chkQueijo" layoutX="145.0" layoutY="151.0" mnemonicParsing="false" text="Queijo" />
+      <CheckBox fx:id="chkPresunto" layoutX="326.0" layoutY="151.0" mnemonicParsing="false" text="Presunto" />
+      <CheckBox fx:id="chkCatupiry" layoutX="482.0" layoutY="151.0" mnemonicParsing="false" text="Catupiry" />
+      <RadioButton fx:id="rbRecheada" layoutX="149.0" layoutY="222.0" mnemonicParsing="false" text="Recheada">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgSO" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbNormal" layoutX="328.0" layoutY="222.0" mnemonicParsing="false" text="Normal" toggleGroup="$tgSO" />
+      <RadioButton fx:id="rbFina" layoutX="493.0" layoutY="222.0" mnemonicParsing="false" text="Fina" toggleGroup="$tgSO" />
+      <TextField fx:id="txtNome" layoutX="173.0" layoutY="27.0" prefHeight="25.0" prefWidth="371.0" promptText="Digite seu nome" />
+      <ListView fx:id="lstResumo" layoutX="302.0" layoutY="257.0" prefHeight="186.0" prefWidth="426.0" />
+      <ToggleButton fx:id="btnCadastrar" layoutX="14.0" layoutY="264.0" minWidth="200.0" mnemonicParsing="false" onAction="#btnCadastrarClick" styleClass="button" stylesheets="@folha.css" text="Cadastrar" />
+      <ToggleButton fx:id="btnLimparComponentes" layoutX="14.0" layoutY="542.0" minWidth="200.0" mnemonicParsing="false" onAction="#btnLimparComponentesClick" styleClass="button" stylesheets="@folha.css" text="Limpar Componentes " />
+      <ToggleButton fx:id="btnReinicializar" layoutX="14.0" layoutY="586.0" minWidth="200.0" mnemonicParsing="false" onAction="#btnReinicializarClick" styleClass="button" stylesheets="@folha.css" text="Reinicializar Sistema" />
+      <Label layoutX="313.0" layoutY="184.0" text="Tipo de borda">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="110.0" text="Adicionais">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="btnApagar" layoutX="14.0" layoutY="300.0" minWidth="200.0" mnemonicParsing="false" onAction="#btnApagarClick" styleClass="button" stylesheets="@folha.css" text="Apagar" />
+      <TextField fx:id="txtTroco" layoutX="24.0" layoutY="410.0" prefHeight="25.0" prefWidth="187.0" />
+      <ToggleButton fx:id="btnTroco" layoutX="14.0" layoutY="447.0" minWidth="200.0" mnemonicParsing="false" onAction="#btnTrocoClick" styleClass="button" stylesheets="@folha.css" text="Calcula Troco" />
+      <Label fx:id="lblTotal" layoutX="581.0" layoutY="491.0" text="Label" textFill="#e80b0b">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="491.0" text="Valor a Pagar: R$" textFill="#e80b0b">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTroco" layoutX="320.0" layoutY="575.0" text="Label" textFill="#250feb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

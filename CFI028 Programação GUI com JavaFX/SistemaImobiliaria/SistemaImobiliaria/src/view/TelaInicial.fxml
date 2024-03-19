@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaInicialController">
+   <children>
+      <Label layoutX="184.0" layoutY="14.0" text="Tela Inicial" textFill="#e40d0d">
+         <font>
+            <Font size="51.0" />
+         </font></Label>
+      <Button fx:id="btnClientes" layoutX="39.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnClientesClicked" text="Clientes" />
+      <Button fx:id="btnImoveis" layoutX="111.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnImoveisClicked" text="Imoveis" />
+      <Button fx:id="btnSair" layoutX="501.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#btnSairClicked" text="Sair do programa" />
+      <MenuBar layoutX="2.0" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastro">
+            <items>
+              <MenuItem fx:id="mniClientes" mnemonicParsing="false" onAction="#btnClientesClicked" text="Clientes" />
+                  <MenuItem fx:id="mniImoveis" mnemonicParsing="false" onAction="#btnImoveisClicked" text="Imoveis" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
